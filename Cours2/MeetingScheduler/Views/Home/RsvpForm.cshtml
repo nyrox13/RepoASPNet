@@ -1,0 +1,40 @@
+﻿@model MeetingScheduler.Models.GuestResponse
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>RsvpForm</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <form asp-action="RsvpForm" method="post">
+        <h1>RSVP</h1>
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Nom">Nom :</label>
+                <input asp-for="Nom" />
+            </div>
+            <div>
+                <label asp-for="Email">Email :</label>
+                <input asp-for="Email" />
+            </div>
+            <div>
+                <label asp-for="Telephone">Téléphone :</label>
+                <input asp-for="Telephone" />
+            </div>
+            <div>
+                <label asp-for="Participera">Allez-vous participer ?</label>
+                <select asp-for="Participera">
+                    <option value="">Choisissez une option</option>
+                    <option value="true">Oui, je viens</option>
+                    <option value="false">Non, je ne viens pas</option>
+                </select>
+            </div>
+            <button type="submit">Envoyer RSVP</button>
+        </form>
+    </body>
+</html>

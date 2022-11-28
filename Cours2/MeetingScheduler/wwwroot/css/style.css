@@ -1,0 +1,121 @@
+﻿/*DEBUT*/
+/*INDEX*/
+
+div > div:first-child{
+    text-align:center;
+    color: dodgerblue;
+    font-size:16pt;
+}
+
+div > a{
+    border: solid 2px;
+    box-shadow: 3px 3px 3px black;
+    padding: 10px;
+    background-color: skyblue;
+    text-decoration:none;
+    color: black;
+
+    display: block;
+    text-align: center;
+
+    margin-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+}
+
+div > p{
+    margin-top:0px;
+    font-size:13pt;
+}
+
+/*FORM*/
+
+form > h1 {
+    border: solid 2px black;
+    padding: 5px;
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size:16pt;
+}
+
+form{
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input, label, select{
+    display:block;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:400px;
+}
+
+button {
+    border: solid 2px;
+    box-shadow: 3px 3px 3px black;
+    padding: 5px;
+    background-color: skyblue;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 25px;
+    width: fit-content;
+}
+
+li{
+    color:red;
+    font-weight:bold;
+}
+
+/*MERCI*/
+
+/*le h2 fait référence à la feuille ListResponses.cshtml*/
+div > h1 , h2{
+    text-align: center;
+    color: dodgerblue;
+    font-size: 16pt;
+}
+
+body > div, body > p{
+    text-align:center;
+}
+
+/*LISTE PERSONNE*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: left;
+    border: solid 3px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border:solid 2px;
+}
+
+th {
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: left;
+}
+
+td{
+    border-style: none solid;
+}
+
+tr:nth-of-type(2n-1){
+    background-color:whitesmoke;
+}
+
+th{
+    background-color:lightgray;
+}
+
+/*FIN*/
