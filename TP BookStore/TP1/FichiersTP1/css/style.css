@@ -1,0 +1,150 @@
+body{
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+header{
+    height: 60px;
+    background-color: #14597f;
+    border-bottom: 1px solid #0b2d3d;
+}
+
+footer{
+    height: 70px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    width: 1200px;
+}
+
+header, main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header > img{
+    text-align: left;
+    height: 60px;
+}
+
+header > nav{
+    float: right;
+    color: white;
+}
+
+header > nav li{
+    display: inline-block;
+}
+
+header > nav a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+.active{
+    background-color: #1fb5e9;
+    border-radius: 4px;
+}
+
+.fa-shopping-cart{
+    color: #14597f;
+}
+
+header > nav a:visited{
+    color: inherit;
+}
+
+.count{
+    color: white;
+    background-color: #d9534f;
+    border-radius: 50%;
+    padding: 0 5px;
+    position: relative;
+    right: 25px;
+    top: 15px;
+}
+
+main > img{
+    float: right;
+    height: 400px;
+    position: fixed;
+    right: 0px;
+    top: 70px;
+}
+
+.btn{
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: #1fb5e9;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s;
+}
+
+main > h1, main > p{
+    width: fit-content;
+}
+
+#filter{
+    width: 25%;
+    margin-right: 50px;
+}
+
+#filter > div > button{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #999999;
+    background-color: white;
+}
+
+#filter > div > button:hover{
+    background-color: #f3f3f3;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s;
+}
+
+#filter > div > button:focus{
+    background-color: #ddf2fb;
+}
+
+#products{
+    width: 75%;
+    float: right;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+}
+
+#products > div > div > a > img{
+    height: 100px;
+}
+
+#products > div > div:not(#title){
+    width: 200px;
+    height: 220px;
+}
+
+#products > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+#title{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+

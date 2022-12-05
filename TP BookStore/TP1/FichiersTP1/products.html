@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>BookStore - Produits</title>
+  <link rel="stylesheet" type="text/css" 
+  href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
   <header>
@@ -10,78 +13,94 @@
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="products.html">Produits</a></li>
+        <li><a href="products.html" class="active">Produits</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="shopping-cart.html">Panier</a></li>
+        <li>
+          <a class="shopping-cart" 
+          href="./shopping-cart.html" 
+          title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div>
-      <h2>Catégories</h2>
-      <button>Appareils photo</button>
-      <button>Consoles</button>
-      <button>Ecrans</button>
-      <button>Ordinateurs</button>
-      <button>Tous les produits</button>
-    </div>
-    
-    <div>
-      <h2>Classement</h2>
-      <button>Prix (bas-haut)</button>
-      <button>Prix (haut-bas)</button>
-      <button>Nom (A-Z)</button>
-      <button>Nom (Z-A)</button>
-    </div>
+    <section id="filter">
+      <div>
+        <h2>Catégories</h2>
+        <button>Appareils photo</button>
+        <button>Consoles</button>
+        <button>Ecrans</button>
+        <button>Ordinateurs</button>
+        <button>Tous les produits</button>
+      </div>
+      
+      <div>
+        <h2>Classement</h2>
+        <button>Prix (bas-haut)</button>
+        <button>Prix (haut-bas)</button>
+        <button>Nom (A-Z)</button>
+        <button>Nom (Z-A)</button>
+      </div>
+    </section>
 
-    <div>
-      <h1>Produits</h1>
-      <h2>6 produits</h2>
-
+    <section id="products">
       <div>
-        <a href="product.html">
-          <p>Apple TV</p>
-          <img src="images/apple-tv.png" />
-          <p>249.99</p>
-        </a>
+        <div id="title">
+          <h1>Produits</h1>
+          <h2>6 produits</h2>
+        </div>
+        
+        <div>
+          <a href="product.html">
+            <p>Apple TV</p>
+            <img src="images/apple-tv.png" />
+            <p>249.99</p>
+          </a>
+        </div>
+        <div>
+          <a href="product.html">
+            <p>Canon EOS 5D Mark II</p>
+            <img src="images/camera-1.png" />
+            <p>2999.99</p>
+          </a>
+        </div>
+        <div>
+          <a href="product.html">
+            <p>Nikon D7000</p>
+            <img src="images/camera-2.png" />
+            <p>549.99</p>
+          </a>
+        </div>
+        <div>
+          <a href="product.html">
+            <p>Canon PowerShot SD1300</p>
+            <img src="images/camera-3.png" />
+            <p>299.99</p>
+          </a>
+        </div>
+        <div>
+          <a href="product.html">
+            <p>Portable</p>
+            <img src="images/laptop-1.png" />
+            <p>699.99</p>
+          </a>
+        </div>
+        <div>
+          <a href="product.html">
+            <p>Portable professionnel</p>
+            <img src="images/laptop-2.png" />
+            <p>599.99</p>
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="product.html">
-          <p>Canon EOS 5D Mark II</p>
-          <img src="images/camera-1.png" />
-          <p>2999.99</p>
-        </a>
-      </div>
-      <div>
-        <a href="product.html">
-          <p>Nikon D7000</p>
-          <img src="images/camera-2.png" />
-          <p>549.99</p>
-        </a>
-      </div>
-      <div>
-        <a href="product.html">
-          <p>Canon PowerShot SD1300</p>
-          <img src="images/camera-3.png" />
-          <p>299.99</p>
-        </a>
-      </div>
-      <div>
-        <a href="product.html">
-          <p>Portable</p>
-          <img src="images/laptop-1.png" />
-          <p>699.99</p>
-        </a>
-      </div>
-      <div>
-        <a href="product.html">
-          <p>Portable professionnel</p>
-          <img src="images/laptop-2.png" />
-          <p>599.99</p>
-        </a>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
